@@ -1,0 +1,127 @@
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    body {
+        background: rgb(21, 175, 137);
+        display: flex;
+        font-family: 'Varela Round', sans-serif;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    #container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        margin: 15px 10px;
+        font-size: 3.3em;
+        color: white;
+        text-shadow: 1px 1px 1px rgb(247, 152, 250), -1px -1px 1px rgb(243, 130, 247);
+    }
+    
+    #img {
+        width: 400px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    a {
+        margin-top: 7px;
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    #buttons {
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+    }
+    
+    #buttons button {
+        padding: 10px 25px;
+        margin: 10px 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(222, 153, 224);
+        background: rgb(230, 92, 235);
+        font-size: 1.2em;
+        color: white;
+    }
+    
+    #buttons button:hover {
+        border: 2px solid rgb(247, 155, 250);
+        background: rgb(193, 88, 197);
+        cursor: pointer;
+    }
+    
+    button:focus {
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    }
+    /*-------------------------------RESPONSIVO----------------------------*/
+    /* Large desktop */
+    
+    @media (max-width:1200px) {
+        #buttons button {
+            padding: 12px 32px;
+            margin: 10px 15px;
+        }
+    }
+    /* Tablet in portrait and desktop */
+    
+    @media (min-width:768px) and (max-width:979px) {
+        h1 {
+            font-size: 3.5em;
+        }
+        a {
+            font-size: 1.5em;
+        }
+    }
+    /* Landscape phones to tablet in portrait */
+    
+    @media (max-width:767px) {
+        h1 {
+            margin-top: 45px;
+            font-size: 4em;
+        }
+        a {
+            font-size: 1.5em;
+        }
+        #buttons button {
+            padding: 18px 40px;
+            margin: 20px 15px;
+            font-size: 1.4em;
+        }
+    }
+    /* Phones in landscape and below */
+    
+    @media (max-width:480px) {
+        h1 {
+            margin-top: 20px;
+            font-size: 3em;
+        }
+        a {
+            font-size: 1.2em;
+        }
+        #buttons button {
+            padding: 12px 20px;
+            margin: 20px 15px;
+            font-size: 1.4em;
+        }
+        #img {
+            width: 300px;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
